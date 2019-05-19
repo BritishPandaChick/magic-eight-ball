@@ -6,12 +6,12 @@ $(document).ready(function(){
 	magic8Ball.askQuestion = function(question){
 	  $("#answer").fadeIn(4000);
 	  var randomNumber = Math.random();
-          var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length;
-          var randomIndex = Math.floor(randomNumberForListOfAnswers);
-          var answer = this.listOfAnswers[randomIndex];	
-		  $("#answer").text(answer);		  
-          console.log(question);
-          console.log(answer);
+      var randomNumberForListOfAnswers = randomNumber * this.listOfAnswers.length;
+      var randomIndex = Math.floor(randomNumberForListOfAnswers);
+      var answer = this.listOfAnswers[randomIndex];	
+		$("#answer").text(answer);		  
+        console.log(question);
+        console.log(answer);
 	};
 	
    var onClick = function(){
